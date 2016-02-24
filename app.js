@@ -45,7 +45,7 @@ app.use('/members', members);
 app.use('/mypages', mypages);
 app.use('/myposts', myposts);
 app.use('/orders', orders);
-app.use('/posts', posts);
+app.use('/posts', posts) ;
 app.use('/preferences', preferences);
 app.use('/rentalpushes', rentalpushes);
 app.use('/replypushes', replypushes);
