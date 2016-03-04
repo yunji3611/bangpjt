@@ -21,13 +21,13 @@ router.get('/', function (req, res, next) {
                         "post_id": 2222,
                         "photo_url": "hong.jpg",
                         "file_url": "file.jpg",
-                        "hashtag": "의자"
+                        "hash_tag": "의자"
                     },
                     {
                         "post_id": 3333,
                         "photo_url": "hong.jpg",
                         "file_url": "file.jpg",
-                        "hashtag": "탁자"
+                        "hash_tag": "탁자"
                     }]
             }
         }
