@@ -5,6 +5,7 @@ router.get('/', function (req, res, next) {
   var result = {
     "postList": [{
       "post_id": 1111,
+      "username" : "작성자",
       "photo_url": "./public/photos/user/profile.jpg",
       "file_url": "./public/photos/interior/europe.jpg",
       "scrap_count": 22,
@@ -21,13 +22,14 @@ router.get('/', function (req, res, next) {
         "link": "www.asd"
       }],
       "reply": [{
-        "username": "작성자",
+        "username": "댓글작성자",
         "reply_content": "댓글내용",
         "reply_time": "2016-01-01"
       }]
     },
       {
         "post_id": 2222,
+        "username" : "작성자",
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
@@ -44,7 +46,7 @@ router.get('/', function (req, res, next) {
           "link": "www.asd"
         }],
         "reply": [{
-          "username": "작성자",
+          "username": "댓글작성자",
           "reply_content": "댓글내용",
           "reply_time": "2016-01-01"
         }]
