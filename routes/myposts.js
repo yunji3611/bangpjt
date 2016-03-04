@@ -6,17 +6,21 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
 
         res.json({
-            "message": "내가쓴 글이 조회되었습니다...",
-            "data": {
-                "count": 20,
-                "page": 1,
-                "listPerPage": 2,
-                "list": [{"myposts_id": 1111,
-                         "photo_url": "###",
-                         "hashtag":"침대"},
-                         {"post_id": 2,
-                             "photo_url": "###",
+            "result": {
+                "message": "내가쓴 글이 조회되었습니다...",
+                "postData": {
+                    "mypost_count": 20,
+                    "page": 1,
+                    "listPerPage": 2,
+                    "list": [{"myposts_id": 1111,
+                        "file_url": "12dsa",
+                        "photo_url": "###",
+                        "hashtag":"침대"},
+                        {"post_id": 2,
+                            "file_url": "12dsa",
+                            "photo_url": "###",
                             "hashtag":"의자"}]
+                }
             }
         });
 
