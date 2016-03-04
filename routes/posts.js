@@ -70,6 +70,7 @@ router.get('/', function (req, res, next) {
                 "scrap_count": 22,
                 "hash_tag": ["의자", "침대"],
                 "category": "북유럽",
+                "content": "게시물 내용",
                 "furnitures": [{
                     "furniture_url": "./public/photos/furniture/chair.jpg",
                     "brand": "IKEA",
@@ -93,6 +94,7 @@ router.get('/', function (req, res, next) {
                     "scrap_count": 22,
                     "hash_tag": ["의자", "침대"],
                     "category": "북유럽",
+                    "content": "게시물 내용",
                     "furnitures": [{
                         "furniture_url": "./public/photos/furniture/chair.jpg",
                         "brand": "IKEA",
