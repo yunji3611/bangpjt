@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
                 "message": "프로필이 조회되었습니다...",
                 "mypageData": {
                     "name": "홍길동",
-                    "photo_path": "hong.jpg"
+                    "photo_url": "hong.jpg"
                 }
             }
         });
@@ -25,7 +25,7 @@ router.get('/', function (req, res, next) {
 router.put('/', function (req, res, next) {
     if (req.secure) {
         res.json({
-            "message": "프로필 사진이 수정되었습니다..."
+            "result":{"message": "프로필 사진이 수정되었습니다"}
         })
     } else {
         var err = new Error('SSL/TLS Upgrade Required');

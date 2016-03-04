@@ -6,7 +6,7 @@ var router = express.Router();
 router.post('/', function (req, res, next) {
     if (req.secure) {
         res.json({
-            "message": "가입이 정상적으로 처리되었습니다..."
+            "result": {"message": "가입이 정상적으로 처리되었습니다"}
         });
 
     } else {
@@ -20,7 +20,7 @@ router.post('/', function (req, res, next) {
 router.post('/login', function (req, res, next) {
    if (req.secure) {
        res.json({
-           "message": "로그인 되었습니다..."
+           "result":{"message": "로그인 되었습니다"}
        })
    } else {
        var err = new Error('SSL/TLS Upgrade Required');
@@ -32,7 +32,9 @@ router.post('/login', function (req, res, next) {
 //로그인(페이스북)
 router.post('/facebook', function (req, res, next) {
     if (req.secure) {
-
+        res.json({
+            "result":{"message": "로그인 되었습니다"}
+        });
     } else {
         var err = new Error('SSL/TLS Upgrade Required');
         err.status = 426;

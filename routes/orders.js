@@ -6,8 +6,7 @@ var router = express.Router();
 router.post ('/', function (req, res, next) {
     if (req.secure) {
         res.json({
-            "message": "임대게시글 등록이 완료되었습니다...",
-            "order_id": 1
+            "result":{"message":"임대되었습니다"}
         });
     } else {
         var err = new Error('SSL/TLS Upgrade Required');

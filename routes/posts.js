@@ -13,14 +13,14 @@ router.get('/', function (req, res, next) {
             },
             "list": [{
                 "id": 1111,
-                "photo_url" : "./public/photos/user/profile.jpg",
-                "interior_url" : "./public/photos/interior/europe.jpg",
+                "photo_url": "./public/photos/user/profile.jpg",
+                "interior_url": "./public/photos/interior/europe.jpg",
                 "scrap_count": 22,
                 "hashtag": ["의자", "침대"],
                 "category": "북유럽",
                 "post_count": 50,
                 "detail": [{
-                    "furniture_url" : "./public/photos/furniture/chair.jpg",
+                    "furniture_url": "./public/photos/furniture/chair.jpg",
                     "furniture": ["IKEA", 12000, "20*40", "link", "color"],
                     "content": "게시물 내용",
                     "reply": "게시물 댓글"
@@ -91,31 +91,63 @@ router.delete('/:post_id/replies/:reply_id', function (req, res, next) {
 
 router.get('/', function (req, res, next) {
     var result = {
-        "result": {
-            "message": "게시물 목록이 조회되었습니다.",
-            "data": {
-                "count": 20,
-                "page": 1,
-                "listperPage": 6
-            },
-            "list": [{
-                "id": 1111,
-                "photo_url" : "./public/photos/user/profile.jpg",
-                "interior_url" : "./public/photos/interior/europe.jpg",
+            "postList": [{
+                "post_id": 1111,
+                "photo_url": "./public/photos/user/profile.jpg",
+                "file_url": "./public/photos/interior/europe.jpg",
                 "scrap_count": 22,
-                "hashtag": ["의자", "침대"],
+                "hash_tag": ["의자", "침대"],
                 "category": "북유럽",
                 "post_count": 50,
-                "detail": [{
-                    "furniture_url" : "./public/photos/furniture/chair.jpg",
-                    "furniture": ["IKEA", 12000, "20*40", "link", "color"],
-                    "content": "게시물 내용",
-                    "reply": "게시물 댓글"
+                "furnitures": [{
+                    "furniture_url": "./public/photos/furniture/chair.jpg",
+                    "brand": "IKEA",
+                    "name": "한샘",
+                    "no": "a22",
+                    "size": "게시물 내용",
+                    "color_id": "white",
+                    "link": "www.asd"
+                }],
+                "reply": [{
+                    "username": "작성자",
+                    "reply_content": "댓글내용",
+                    "reply_time": "2016-01-01"
                 }]
-            }]
-        }
+            },
+                {
+                    "post_id": 2222,
+                    "photo_url": "./public/photos/user/profile.jpg",
+                    "file_url": "./public/photos/interior/europe.jpg",
+                    "scrap_count": 22,
+                    "hash_tag": ["의자", "침대"],
+                    "category": "북유럽",
+                    "post_count": 50,
+                    "furnitures": [{
+                        "furniture_url": "./public/photos/furniture/chair.jpg",
+                        "brand": "IKEA",
+                        "name": "한샘",
+                        "no": "a22",
+                        "size": "게시물 내용",
+                        "color_id": "white",
+                        "link": "www.asd"
+                    }],
+                    "reply": [{
+                        "username": "작성자",
+                        "reply_content": "댓글내용",
+                        "reply_time": "2016-01-01"
+                    }]
+                }]
+
     }
-    res.json(result);
+
+    res.json({
+        "result": {
+            "message": "게시물 목록이 조회되었습니다",
+            "page": 1,
+            "listperPage": 6,
+            "postData": {"postList": result}
+        }
+    });
 })
 
 
