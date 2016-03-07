@@ -118,7 +118,7 @@ router.get('/', function (req, res, next) {
             "message": "게시물 목록이 조회되었습니다",
             "page": 1,
             "listperPage": 6,
-            "postData": {"postList": result}
+            "postData": result
         }
     });
 })
