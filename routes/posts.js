@@ -126,7 +126,7 @@ router.get('/:post_id', function (req, res, next) {
     console.log(req.query.category);
     if (req.query.category === undefined) {
       var result = {
-        "communityDetails": [{
+        "communityList": [{
           "post_id": 45,
           "username": "사용자1",
           "photo_url": "./public/photos/user/profile.jpg",
@@ -153,7 +153,7 @@ router.get('/:post_id', function (req, res, next) {
       }
     } else {
       var result = {
-        "interiorDetails": [{
+        "interiorList": [{
           "post_id": 1111,
           "file_url" : "./public/photos/interior/xxxxx.jpg(인테리어사진)",
           "scrap_count": 20,
