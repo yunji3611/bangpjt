@@ -20,7 +20,7 @@ router.put('/', function (req, res, next) {
       "data": {
         "post_id": 33,
         "content": "게시물 내용",
-        "hash_tag" : [{"tag1": "간이의자", "tag2": "책상", "tag3": "화장대"}],
+        "hash_tag" : ["간이의자",  "책상", "화장대"],
         "file_url": "사진"
       }
     }
@@ -70,28 +70,19 @@ router.get('/', function (req, res, next) {
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
-        "hash_tag": [{"tag1": "간이의자", "tag2": "책상", "tag3": "화장대"}],
-        "content": "게시물 내용",
-        "reply": [{
-          "username": "댓글작성자",
-          "reply_content": "댓글내용",
-          "reply_time": "2016-01-01"
-        }]
+        "hash_tag": ["간이의자", "화장대"],
+
       },
 
         {
-          "post_id": 45,
-          "username": "사용자1",
+          "post_id": 3,
+          "username": "사용자2",
           "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
-          "hash_tag": [{"tag1": "간이의자", "tag2": "책상", "tag3": "화장대"}],
-          "content": "게시물 내용",
-          "reply": [{
-            "username": "댓글작성자",
-            "reply_content": "댓글내용",
-            "reply_time": "2016-01-01"
-          }]
+          "hash_tag": ["간이의자", "책상","화장대"]
+
+
 
         }]
     }
@@ -103,24 +94,8 @@ router.get('/', function (req, res, next) {
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
-        "hash_tag": [{"tag1": "의자", "tag2": "침대", "tag3": "화장대"}],
-        "category": "모던",
-        "category_id": 1,
-        "content": "게시물 내용",
-        "furnitures": [{
-          "furniture_url": "./public/photos/furniture/chair.jpg",
-          "brand": "IKEA",
-          "name": "한샘",
-          "no": "a22",
-          "size": "게시물 내용",
-          "color_id": "white",
-          "link": "www.asd"
-        }],
-        "reply": [{
-          "username": "댓글작성자",
-          "reply_content": "댓글내용",
-          "reply_time": "2016-01-01"
-        }]
+        "hash_tag": ["의자", "침대",  "화장대"],
+        "category": "모던"
       },
         {
           "post_id": 2222,
@@ -128,24 +103,9 @@ router.get('/', function (req, res, next) {
           "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
-          "hash_tag": [{"tag1": "간이의자", "tag2": "책상", "tag3": "화장대"}],
-          "category": "북유럽",
-          "category_id": 2,
-          "content": "게시물 내용",
-          "furnitures": [{
-            "furniture_url": "./public/photos/furniture/chair.jpg",
-            "brand": "IKEA",
-            "name": "한샘",
-            "no": "a22",
-            "size": "게시물 내용",
-            "color_id": "white",
-            "link": "www.asd"
-          }],
-          "reply": [{
-            "username": "댓글작성자",
-            "reply_content": "댓글내용",
-            "reply_time": "2016-01-01"
-          }]
+          "hash_tag": ["의자", "침대"],
+          "category": "북유럽"
+
         }]
 
     }
