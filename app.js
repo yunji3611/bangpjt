@@ -17,7 +17,8 @@ var preferences = require('./routes/preferences');
 var rentalpushes = require('./routes/rentalpushes');
 var replypushes = require('./routes/replypushes');
 var scraps = require('./routes/scraps');
-var tags = require('./routes/tags')
+var tags = require('./routes/tags');
+var mainpages = require('./routes/mainpages');
 
 var app = express();
 app.set('env', 'development');
@@ -52,6 +53,7 @@ app.use('/rentalpushes', rentalpushes);
 app.use('/replypushes', replypushes);
 app.use('/scraps', scraps);
 app.use('/tags', tags);
+app.use('/mainpages', mainpages);
 
 
 // catch 404 and forward to error handler
