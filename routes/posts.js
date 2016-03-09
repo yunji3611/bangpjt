@@ -126,7 +126,7 @@ router.get('/:post_id', function (req, res, next) {
     console.log(req.query.category);
     if (req.query.category === undefined) {
       var result = {
-        "communityList": [{
+        "communityList": {
           "post_id": 45,
           "username": "사용자1",
           "photo_url": "./public/photos/user/profile.jpg",
@@ -136,57 +136,32 @@ router.get('/:post_id', function (req, res, next) {
           "content" :"게시물내용",
           "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
 
-        },
+        }
 
-          {
-            "post_id": 3,
-            "username": "사용자2",
-            "photo_url": "./public/photos/user/profile.jpg",
-            "file_url": "./public/photos/interior/europe.jpg",
-            "scrap_count": 22,
-            "hash_tag": ["간이의자", "책상","화장대"],
-            "content" :"게시물내용",
-            "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
-
-
-          }]
       }
     } else {
       var result = {
-        "interiorList": [{
+        "interiorList": {
           "post_id": 1111,
           "file_url" : "./public/photos/interior/xxxxx.jpg(인테리어사진)",
           "scrap_count": 20,
           "category": "category명",
+          "package" : "package명",
+          "month_price" : "월가격",
           "furnitures": [{ "furniture_url" : "./public/photos/furniture/xxxxx.jpg(소품사진)",
                            "brand": "IKEA", "name" : "의자", "no" : "ABC-000",
-                           "size": "20*40", "color_id" :"white", "link" : "link" },
+                           "size": "20*40", "color_id" :"white", "link" : "link" , "price" : "상세가격"},
                          { "furniture_url" : "./public/photos/furniture/xxxxx.jpg(소품사진)",
                            "brand": "한샘", "name" : "침대", "no" : "BBC-002",
-                           "size": "100*200", "color_id" :"black", "link" : "link" }],
+                           "size": "100*200", "color_id" :"black", "link" : "link", "price" : "상세가격" }],
           "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
-    }  ,
-
-          {
-            "post_id": 1111,
-            "file_url" : "./public/photos/interior/xxxxx.jpg(인테리어사진)",
-            "scrap_count": 20,
-            "category": "category명",
-            "furnitures": [{ "furniture_url" : "./public/photos/furniture/xxxxx.jpg(소품사진)",
-                             "brand": "IKEA", "name" : "의자", "no" : "ABC-000",
-                              "size": "20*40", "color_id" :"white", "link" : "link" },
-                           { "furniture_url" : "./public/photos/furniture/xxxxx.jpg(소품사진)",
-                             "brand": "한샘", "name" : "침대", "no" : "BBC-002",
-                             "size": "100*200", "color_id" :"black", "link" : "link" }],
-            "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
-
-          }]
+                      }
       }
     }
     res.json({
       "result": {
         "message": "게시물 상세페이지입니다",
-        "postData": result
+        "detailData": result
       }
     });
   }
