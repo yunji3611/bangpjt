@@ -126,7 +126,7 @@ router.get('/:post_id', function (req, res, next) {
     console.log(req.query.category);
     if (req.query.category === undefined) {
       var result = {
-        "communityList": {
+
           "post_id": 45,
           "username": "사용자1",
           "photo_url": "./public/photos/user/profile.jpg",
@@ -136,12 +136,12 @@ router.get('/:post_id', function (req, res, next) {
           "content" :"게시물내용",
           "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
 
-        }
+
 
       }
     } else {
       var result = {
-        "interiorList": {
+
           "post_id": 1111,
           "file_url" : "./public/photos/interior/xxxxx.jpg(인테리어사진)",
           "scrap_count": 20,
@@ -155,7 +155,7 @@ router.get('/:post_id', function (req, res, next) {
                            "brand": "한샘", "name" : "침대", "no" : "BBC-002",
                            "size": "100*200", "color_id" :"black", "link" : "link", "price" : "상세가격" }],
           "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
-                      }
+
       }
     }
     res.json({
