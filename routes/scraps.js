@@ -15,19 +15,19 @@ router.get('/', function (req, res, next) {
                     "post_id": 1111,
                     "photo_url": "hong.jpg",
                     "file_url": "file.jpg",
-                    "hash_tag": "침대"
+                    "hash_tag": ["침대", "가구"]
                 },
                     {
                         "post_id": 2222,
                         "photo_url": "hong.jpg",
                         "file_url": "file.jpg",
-                        "hash_tag": "의자"
+                        "hash_tag": ["침대", "가구"]
                     },
                     {
                         "post_id": 3333,
                         "photo_url": "hong.jpg",
                         "file_url": "file.jpg",
-                        "hash_tag": "탁자"
+                        "hash_tag": ["침대", "가구"]
                     }]
             }
         }
