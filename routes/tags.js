@@ -12,20 +12,7 @@ router.get('/', function (req, res, next) {
       "hash_tag": ["간이의자",  "화장대"],
       "category": "북유럽",
       "content": "게시물내용",
-      "furnitures": [{
-        "furniture_url": "./public/photos/furniture/chair.jpg",
-        "brand": "IKEA",
-        "name": "한샘",
-        "no": "a22",
-        "size": "게시물 내용",
-        "color_id": "white",
-        "link": "www.asd"
-      }],
-      "reply": [{
-        "username": "댓글작성자",
-        "reply_content": "댓글내용",
-        "reply_time": "2016-01-01"
-      }]
+
     },
       {
         "post_id": 2222,
@@ -34,22 +21,9 @@ router.get('/', function (req, res, next) {
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
         "hash_tag": ["간이의자",  "화장대"],
-        "category": "북유럽",
+        "category": "",
         "content": "게시물내용",
-        "furnitures": [{
-          "furniture_url": "./public/photos/furniture/chair.jpg",
-          "brand": "IKEA",
-          "name": "한샘",
-          "no": "a22",
-          "size": "게시물 내용",
-          "color_id": "white",
-          "link": "www.asd"
-        }],
-        "reply": [{
-          "username": "댓글작성자",
-          "reply_content": "댓글내용",
-          "reply_time": "2016-01-01"
-        }]
+
       }]
 
   }
