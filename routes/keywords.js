@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   var word = req.query.word;
   if(word) {
-      var result = [{"word":"의"}, {"word" : "화"}]
+      var result = ["의자", "화", "러그"]
         }
 
 

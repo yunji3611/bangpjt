@@ -7,7 +7,7 @@ router.post('/', function (req, res, next) {
     "result": {
       "message": "게시물이 등록되었습니다."
     }
-  }
+  };
   res.json(result);
 
 });
@@ -19,7 +19,7 @@ router.put('/:post_id', function (req, res, next) {
       "message": "게시물이 수정되었습니다."
 
     }
-  }
+  };
   res.json(result);
 
 });
@@ -29,7 +29,7 @@ router.delete('/:post_id', function (req, res, next) {
     "result": {
       "message": "게시물이 삭제되었습니다."
     }
-  }
+  };
   res.json(result);
 
 });
@@ -85,8 +85,6 @@ router.get('/', function (req, res, next) {
     var result = {
       "interiorList": [{
         "post_id": 1111,
-        "username": "방테리어",
-        "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
         "hash_tag": ["간이의자",  "책상"],
@@ -94,8 +92,6 @@ router.get('/', function (req, res, next) {
       },
         {
           "post_id": 2222,
-          "username": "방테리어",
-          "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
           "hash_tag": ["간이의자",  "화장대"],
