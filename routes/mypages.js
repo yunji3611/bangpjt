@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
                 "message": "프로필이 조회되었습니다...",
                 "mypageData": {
                     "name": "홍길동",
-                    "photo_url": "hong.jpg"
+                    "photo_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/mypages/upload_bd6fe497626e80589398e48065ead9ad.jpg"
                 }
             }
         });
