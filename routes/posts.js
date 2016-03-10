@@ -60,7 +60,7 @@ router.get('/', function (req, res, next) {
   if (req.query.category === undefined) {
     var result = {
       "communityList": [{
-        "post_id": 103,
+        "post_id": 102,
         "username": "전인아",
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/posts/upload_f830db162fc2204b981c472a2d2adf21.jpg",

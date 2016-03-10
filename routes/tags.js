@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
 
     },
       {
-        "post_id": 2222,
+        "post_id": 22,
         "username" : "작성자",
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
