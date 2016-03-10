@@ -16,13 +16,13 @@ router.get('/', function (req, res, next) {
                         "post_id": 1111,
                         "file_url": "12dsa",
                         "photo_url": "###",
-                        "hash_tag": "침대"
+                        "hash_tag": ["침대", "가구"]
                 },
                     {
                         "post_id": 2,
                         "file_url": "12dsa",
                         "photo_url": "###",
-                        "hash_tag": "의자"
+                        "hash_tag": ["침대", "가구"]
                     }]
             }
         }
