@@ -65,7 +65,7 @@ router.get('/', function (req, res, next) {
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
-        "hash_tag": [{"tag" : "간이의자"},{"tag" : "러그"}, {"tag" : "의자"}],
+        "hash_tag": ["간이의자",  "화장대"],
 
       },
 
@@ -75,7 +75,7 @@ router.get('/', function (req, res, next) {
           "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
-          "hash_tag": [{"tag" : "간이의자"},{"tag" : "화장대"}]
+          "hash_tag": ["간이의자",  "러그"],
 
 
 
@@ -89,7 +89,7 @@ router.get('/', function (req, res, next) {
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
-        "hash_tag": [{"tag" : "간이의자"}, {"tag" : "의자"}],
+        "hash_tag": ["간이의자",  "책상"],
         "category": "모던"
       },
         {
@@ -98,7 +98,7 @@ router.get('/', function (req, res, next) {
           "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
-          "hash_tag": [{"tag" : "화장대"}],
+          "hash_tag": ["간이의자",  "화장대"],
           "category": "북유럽"
 
         }]
@@ -127,7 +127,8 @@ router.get('/:post_id', function (req, res, next) {
           "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
-          "hash_tag": [{"tag" : "간이의자"}, {"tag" : "화장대"}],
+          //"hash_tag": [{"tag" : "간이의자"}, {"tag" : "화장대"}],
+         "hash_tag": ["간이의자",  "화장대"],
           "content" :"게시물내용",
           "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
 
@@ -148,8 +149,8 @@ router.get('/:post_id', function (req, res, next) {
                            "size": "20*40", "color_id" :"white", "link" : "link" , "price" : "상세가격"},
                          { "furniture_url" : "./public/photos/furniture/xxxxx.jpg(소품사진)",
                            "brand": "한샘", "name" : "침대", "no" : "BBC-002",
-                           "size": "100*200", "color_id" :"black", "link" : "link", "price" : "상세가격" }],
-          "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
+                           "size": "100*200", "color_id" :"black", "link" : "link", "price" : "상세가격" }]
+
 
       }
     }

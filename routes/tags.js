@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
       "photo_url": "./public/photos/user/profile.jpg",
       "file_url": "./public/photos/interior/europe.jpg",
       "scrap_count": 22,
-      "hash_tag": ["의자", "침대"],
+      "hash_tag": ["간이의자",  "화장대"],
       "category": "북유럽",
       "content": "게시물내용",
       "furnitures": [{
@@ -33,7 +33,7 @@ router.get('/', function (req, res, next) {
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
-        "hash_tag": ["의자", "침대"],
+        "hash_tag": ["간이의자",  "화장대"],
         "category": "북유럽",
         "content": "게시물내용",
         "furnitures": [{
