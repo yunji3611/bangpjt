@@ -13,23 +13,18 @@ router.post('/', function (req, res, next) {
 });
 
 
-router.put('/', function (req, res, next) {
+router.put('/:post_id', function (req, res, next) {
   var result = {
     "result": {
-      "message": "게시물이 수정되었습니다.",
-      "data": {
-        "post_id": 33,
-        "content": "게시물 내용",
-        "hash_tag" : [{"tag" : "간이의자"}],
-        "file_url": "사진"
-      }
+      "message": "게시물이 수정되었습니다."
+
     }
   }
   res.json(result);
 
 });
 
-router.delete('/', function (req, res, next) {
+router.delete('/:post_id', function (req, res, next) {
   var result = {
     "result": {
       "message": "게시물이 삭제되었습니다."
