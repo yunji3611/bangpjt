@@ -11,7 +11,7 @@ router.get('/', function (req, res, next) {
       "scrap_count": 22,
       "hash_tag": ["간이의자",  "화장대"],
       "category": "북유럽",
-      "content": "게시물내용",
+      "content": "게시물내용"
 
     },
       {
@@ -22,7 +22,7 @@ router.get('/', function (req, res, next) {
         "scrap_count": 22,
         "hash_tag": ["간이의자",  "화장대"],
         "category": "없음",
-        "content": "게시물내용",
+        "content": "게시물내용"
 
       }]
 

@@ -60,10 +60,10 @@ router.get('/', function (req, res, next) {
   if (req.query.category === undefined) {
     var result = {
       "communityList": [{
-        "post_id": 45,
-        "username": "사용자1",
+        "post_id": 103,
+        "username": "전인아",
         "photo_url": "./public/photos/user/profile.jpg",
-        "file_url": "./public/photos/interior/europe.jpg",
+        "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/posts/upload_f830db162fc2204b981c472a2d2adf21.jpg",
         "scrap_count": 22,
         "hash_tag": ["간이의자",  "화장대"],
 
@@ -112,7 +112,7 @@ router.get('/', function (req, res, next) {
   }
   )
 
-//임대게시물 상세조회
+//게시물 상세조회
 router.get('/:post_id', function (req, res, next) {
     console.log(req.query.category);
     if (req.query.category === undefined) {
