@@ -20,7 +20,7 @@ router.put('/', function (req, res, next) {
       "data": {
         "post_id": 33,
         "content": "게시물 내용",
-        "hash_tag" : ["간이의자",  "책상", "화장대"],
+        "hash_tag" : [{"tag" : "간이의자"}],
         "file_url": "사진"
       }
     }
@@ -70,7 +70,7 @@ router.get('/', function (req, res, next) {
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
-        "hash_tag": ["간이의자", "화장대"],
+        "hash_tag": [{"tag" : "간이의자"}],
 
       },
 
@@ -80,7 +80,7 @@ router.get('/', function (req, res, next) {
           "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
-          "hash_tag": ["간이의자", "책상","화장대"]
+          "hash_tag": [{"tag" : "간이의자"}]
 
 
 
@@ -94,7 +94,7 @@ router.get('/', function (req, res, next) {
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
-        "hash_tag": ["의자", "침대",  "화장대"],
+        "hash_tag": [{"tag" : "간이의자"}],
         "category": "모던"
       },
         {
@@ -103,7 +103,7 @@ router.get('/', function (req, res, next) {
           "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
-          "hash_tag": ["의자", "침대"],
+          "hash_tag": [{"tag" : "화장대"}],
           "category": "북유럽"
 
         }]
@@ -132,7 +132,7 @@ router.get('/:post_id', function (req, res, next) {
           "photo_url": "./public/photos/user/profile.jpg",
           "file_url": "./public/photos/interior/europe.jpg",
           "scrap_count": 22,
-          "hash_tag": ["간이의자", "화장대"],
+          "hash_tag": [{"tag" : "간이의자"}],
           "content" :"게시물내용",
           "reply": [{"username" :"댓글작성자", "reply_content": "댓글내용", "reply_time": "댓글작성시간"}]
 
