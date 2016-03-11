@@ -6,7 +6,7 @@ router.get('/', function (req, res, next) {
   var result = {
     "mainList": [{
       "post_id": 1111,
-      "file_url": "debug=bangpjt:server sudo forever start ./bin/www",
+      "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/mypages/upload_bd6fe497626e80589398e48065ead9ad.jpg",
       "post_count" : 100,
       "scrap_count": 22,
       "category": "모던",
@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
     },
       {
         "post_id": 2222,
-        "file_url": "debug=bangpjt:server sudo forever start ./bin/www",
+        "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/mypages/upload_bd6fe497626e80589398e48065ead9ad.jpg",
         "scrap_count": 22,
         "post_count" : 100,
         "category": "북유럽",
@@ -26,7 +26,7 @@ router.get('/', function (req, res, next) {
 
       {
         "post_id": 3333,
-        "file_url": "debug=bangpjt:server sudo forever start ./bin/www",
+        "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/mypages/upload_bd6fe497626e80589398e48065ead9ad.jpg",
         "scrap_count": 22,
         "post_count" : 100,
         "category": "빈티지",
@@ -37,7 +37,7 @@ router.get('/', function (req, res, next) {
 
       {
         "post_id": 4444,
-        "file_url": "debug=bangpjt:server sudo forever start ./bin/www",
+        "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/mypages/upload_bd6fe497626e80589398e48065ead9ad.jpg",
         "scrap_count": 22,
         "post_count" : 100,
         "category": "프로방스",
