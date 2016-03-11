@@ -11,18 +11,18 @@ router.get('/', function (req, res, next) {
       "scrap_count": 22,
       "hash_tag": ["간이의자",  "화장대"],
       "category": "북유럽",
-      "content": "게시물내용",
+      "content": "게시물내용"
 
     },
       {
-        "post_id": 2222,
+        "post_id": 22,
         "username" : "작성자",
         "photo_url": "./public/photos/user/profile.jpg",
         "file_url": "./public/photos/interior/europe.jpg",
         "scrap_count": 22,
         "hash_tag": ["간이의자",  "화장대"],
         "category": "없음",
-        "content": "게시물내용",
+        "content": "게시물내용"
 
       }]
 
