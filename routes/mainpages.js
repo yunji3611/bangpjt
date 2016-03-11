@@ -6,7 +6,7 @@ router.get('/', function (req, res, next) {
   var result = {
     "mainList": [{
       "post_id": 1111,
-      "file_url": "./public/photos/interior/mo.jpg",
+      "file_url": "debug=bangpjt:server sudo forever start ./bin/www",
       "post_count" : 100,
       "scrap_count": 22,
       "category": "모던",
@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
     },
       {
         "post_id": 2222,
-        "file_url": "./public/photos/interior/europe.jpg",
+        "file_url": "debug=bangpjt:server sudo forever start ./bin/www",
         "scrap_count": 22,
         "post_count" : 100,
         "category": "북유럽",
@@ -26,7 +26,7 @@ router.get('/', function (req, res, next) {
 
       {
         "post_id": 3333,
-        "file_url": "./public/photos/interior/vin.jpg",
+        "file_url": "debug=bangpjt:server sudo forever start ./bin/www",
         "scrap_count": 22,
         "post_count" : 100,
         "category": "빈티지",
@@ -37,7 +37,7 @@ router.get('/', function (req, res, next) {
 
       {
         "post_id": 4444,
-        "file_url": "./public/photos/interior/pro.jpg",
+        "file_url": "debug=bangpjt:server sudo forever start ./bin/www",
         "scrap_count": 22,
         "post_count" : 100,
         "category": "프로방스",
