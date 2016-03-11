@@ -73,7 +73,7 @@ router.get('/', function (req, res, next) {
           "post_id": 3,
           "username": "사용자2",
           "photo_url": "./public/photos/user/profile.jpg",
-          "file_url": "./public/photos/interior/europe.jpg",
+          "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/posts/upload_f830db162fc2204b981c472a2d2adf21.jpg",
           "scrap_count": 22,
           "hash_tag": ["간이의자",  "러그"],
 
@@ -85,14 +85,14 @@ router.get('/', function (req, res, next) {
     var result = {
       "interiorList": [{
         "post_id": 1111,
-        "file_url": "./public/photos/interior/europe.jpg",
+        "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/posts/upload_f830db162fc2204b981c472a2d2adf21.jpg",
         "scrap_count": 22,
         "hash_tag": ["간이의자",  "책상"],
         "category": "모던"
       },
         {
           "post_id": 2222,
-          "file_url": "./public/photos/interior/europe.jpg",
+          "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/posts/upload_f830db162fc2204b981c472a2d2adf21.jpg",
           "scrap_count": 22,
           "hash_tag": ["간이의자",  "화장대"],
           "category": "북유럽"
@@ -120,8 +120,8 @@ router.get('/:post_id', function (req, res, next) {
 
           "post_id": 45,
           "username": "사용자1",
-          "photo_url": "./public/photos/user/profile.jpg",
-          "file_url": "./public/photos/interior/europe.jpg",
+          "photo_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/posts/upload_f830db162fc2204b981c472a2d2adf21.jpg",
+          "file_url": "https://bangpjt.s3.ap-northeast-2.amazonaws.com/posts/upload_f830db162fc2204b981c472a2d2adf21.jpg",
           "scrap_count": 22,
           //"hash_tag": [{"tag" : "간이의자"}, {"tag" : "화장대"}],
          "hash_tag": ["간이의자",  "화장대"],
@@ -135,7 +135,7 @@ router.get('/:post_id', function (req, res, next) {
       var result = {
 
           "post_id": 1111,
-          "file_url" : "./public/photos/interior/xxxxx.jpg(인테리어사진)",
+          "file_url" : "https://bangpjt.s3.ap-northeast-2.amazonaws.com/posts/upload_f830db162fc2204b981c472a2d2adf21.jpg",
           "scrap_count": 20,
           "category": "category명",
           "package" : "package명",
